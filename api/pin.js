@@ -28,7 +28,7 @@ export default async (req, res) => {
 
   res.setHeader("Content-Type", "image/svg+xml");
 
-  if (blacklist.includes(username)) {
+  if (username !== 'ShirasawaSama') {
     return res.send(renderError("Something went wrong"));
   }
 
